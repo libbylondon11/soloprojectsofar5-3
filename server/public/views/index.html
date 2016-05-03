@@ -1,0 +1,39 @@
+<!-- //I will create lots of different views for all of the pages I create.
+//Home Page. home.js. where you log in, register, or log out.
+//User welcome page. welcome.js.  choose your coop.
+coop pages:
+//Seward.js. handmade api of powders. can select to add to user account. can add white powders from this coop that are not listed.
+//eastside.js. handmade api of powders. can select to add to user account.can add white powders from this coop that are not listed.
+//wedge.js. handmade api of powders. can select to add to user account.can add white powders from this coop that are not listed.
+//Userpage.js. Lists the white powders in your cupboard.
+users have the option to delete their items or go back to the welcome page. -->
+
+<!DOCTYPE html>
+<html ng-app="powderApp">
+  <head>
+    <meta charset="utf-8">
+    <title>White Powder Finder</title>
+    <script src="vendors/angular/angular.min.js"></script>
+    <script src="vendors/angular-route/angular-route.min.js"></script>
+    <script src="assets/scripts/client.min.js"></script>
+    <!-- <base href="/" /> -->
+  </head>
+  <body class="container" ng-controller="MainController">
+    <h2>  White Powder Finder:
+      A Co-op Bulk Aisle Support App </h2> </br>
+    <h1> Log in space  </h1>
+    <form id="loginForm" action="/" method="POST">
+      <label for="username"> Username: </label>
+      <input type="text" name="username" id= "username" />
+    </div>
+    <div>
+      <label for "password"> Password: </label>
+      <input type="password" name="password" id="password"/>
+    </div>
+    <div>
+      <input type="submit"/>
+      <a href="/register">Register</a>
+    </div>
+  </form>
+</body>
+<html>
